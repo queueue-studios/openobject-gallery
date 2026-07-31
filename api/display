@@ -1,6 +1,8 @@
 {
   "items": [
-    { "id": 1, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-image.jpg" }
+    { "id": 1, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-1.jpg" },
+    { "id": 2, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-2.jpg" },
+    { "id": 3, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-3.jpg" }
   ],
   "durationMs": 8000,
   "mode": "sequence",
