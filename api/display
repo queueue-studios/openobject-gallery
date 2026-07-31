@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": 1, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-post-no-bills.jpg" }
+  ],
+  "durationMs": 8000,
+  "mode": "sequence",
+  "pinnedId": null,
+  "asleep": false,
+  "source": "library"
+}
