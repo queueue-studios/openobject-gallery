@@ -1,6 +1,6 @@
 {
   "items": [
-    { "id": 1, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-post-no-bills.jpg" }
+    { "id": 1, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-image.jpg" }
   ],
   "durationMs": 8000,
   "mode": "sequence",
