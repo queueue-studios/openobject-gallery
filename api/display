@@ -1,8 +1,145 @@
 {
   "items": [
-    { "id": 1, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-1.jpg" },
-    { "id": 2, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-2.jpg" },
-    { "id": 3, "kind": "still", "format": "jpeg", "fit": "fit", "src": "/openobject-gallery-3.jpg" }
+    {
+      "id": 1,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-1.jpg"
+    },
+    {
+      "id": 2,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-2.jpg"
+    },
+    {
+      "id": 3,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-3.jpg"
+    },
+    {
+      "id": 4,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-4.jpg"
+    },
+    {
+      "id": 5,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-5.jpg"
+    },
+    {
+      "id": 6,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-6.jpg"
+    },
+    {
+      "id": 7,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-7.jpg"
+    },
+    {
+      "id": 8,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-8.jpg"
+    },
+    {
+      "id": 9,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-9.jpg"
+    },
+    {
+      "id": 10,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-10.jpg"
+    },
+    {
+      "id": 11,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-11.jpg"
+    },
+    {
+      "id": 12,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-12.jpg"
+    },
+    {
+      "id": 13,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-13.jpg"
+    },
+    {
+      "id": 14,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-14.jpg"
+    },
+    {
+      "id": 15,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-15.jpg"
+    },
+    {
+      "id": 16,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-16.jpg"
+    },
+    {
+      "id": 17,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-17.jpg"
+    },
+    {
+      "id": 18,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-18.jpg"
+    },
+    {
+      "id": 19,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-19.jpg"
+    },
+    {
+      "id": 20,
+      "kind": "still",
+      "format": "jpeg",
+      "fit": "fit",
+      "src": "/openobject-gallery-20.jpg"
+    }
   ],
   "durationMs": 8000,
   "mode": "sequence",

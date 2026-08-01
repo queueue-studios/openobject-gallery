@@ -6,26 +6,31 @@ Host picker's empty state (when no Host is found on the network), so a new owner
 an App Store reviewer, can see real art immediately without running a Host of their own.
 
 An OpenObject display is a dumb client: it fetches `/api/display` and then the media
-that response names. This repo just serves those two things statically:
+that response names. So this repo just serves those things statically:
 
-- `api/display` — the rotation (JSON), matching the player's `/api/display` shape. It
-  lists three pieces on an 8-second equal-time rotation, in sequence order, so the
-  Gallery shows what OpenObject actually does (a rotating art player) rather than a
-  single still.
-- `openobject-gallery-1.jpg`, `-2.jpg`, `-3.jpg` — the artwork the rotation cycles
-  through. The names are deliberately generic (not the name of any one piece) so the
-  art can be swapped over time without changing anything else.
-- `CNAME` — binds the site to `gallery.openobject.io`.
-- `.nojekyll` — serve files as-is (no Jekyll processing).
-- `index.html` — a plain landing page for anyone who opens the domain in a browser.
+- `openobject-gallery-1.jpg`, `-2.jpg`, ... — the artwork the rotation cycles through.
+  Names are a simple numeric convention; drop in `openobject-gallery-<N>.jpg` and it
+  joins the rotation in numeric order. Keep them right-sized (~3840px wide is plenty —
+  the apps decode at 3840 max and fit to screen).
+- `api/display` — the rotation (JSON), **generated** from the image files (see below).
+- `index.html` — a plain landing page listing the pieces, also generated.
+- `CNAME` / `.nojekyll` — bind the site to `gallery.openobject.io` and serve files as-is.
 
 ## Changing the art
 
-Replace any of `openobject-gallery-1/2/3.jpg` with a new JPEG of the same name and
-commit — nothing else changes, and the apps keep working. To change how many pieces
-rotate, add or remove items in `api/display`'s `items` array (and add/remove the
-matching image files). To change the pace, edit `durationMs` (milliseconds, one global
-value for all pieces). If you switch a piece to a different format (e.g. PNG), also
-update that item's `src`, `format`, and `kind` (and the file extension).
+1. Add, remove, or replace any `openobject-gallery-<N>.jpg` files.
+2. Regenerate the rotation:
+
+   ```
+   python3 generate.py
+   ```
+
+   It scans every `openobject-gallery-N.(jpg|jpeg|png)`, sorts them numerically (so
+   `-10` follows `-9`), and rewrites `api/display` + `index.html`. No hand-editing.
+3. Commit and push. The apps pick up the change on their next poll; no app change and
+   no App Store resubmission are ever needed.
+
+Pace and order live at the top of `generate.py`: `DURATION_MS` (one global equal-time
+duration for every piece) and `MODE` (`sequence` or `shuffle`).
 
 Source is public, all rights reserved. Copyright Queueue Studios LLC.
