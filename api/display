@@ -139,13 +139,6 @@
       "format": "jpeg",
       "fit": "fit",
       "src": "/openobject-gallery-20.jpg"
-    },
-    {
-      "id": 21,
-      "kind": "still",
-      "format": "jpeg",
-      "fit": "fit",
-      "src": "/openobject-gallery-21.jpg"
     }
   ],
   "durationMs": 8000,
